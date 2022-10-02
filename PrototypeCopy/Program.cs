@@ -1,9 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
- var obj = new System.Windows.Forms.DataObject(
-            DataFormats.Text,
-            "This is a test"
-        );
+System.Windows.Clipboard.SetText("Hello, World!");
 
-await StaHelper.Run(() => Clipboard.SetDataObject( obj, true ));
+ 
+//await StaHelper.Run(() => Clipboard.SetDataObject( obj, true ));
